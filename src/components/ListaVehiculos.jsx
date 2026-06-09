@@ -7,7 +7,6 @@ export default function ListaVehiculos({ vehiculos }) {
         <p>No hay vehículos registrados en este momento.</p>
       ) : (
         vehiculos.map((vehiculo) => (
-          /* Se usa la patente como identificador único (key) */
           <CardVehiculo key={vehiculo.patente} vehiculo={vehiculo} />
         ))
       )}

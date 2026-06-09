@@ -1,4 +1,3 @@
-/* Reset CSS Obligatorio */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,6 @@ main {
   padding: 0 1rem;
 }
 
-/* --- Estilos del Formulario --- */
 .formulario-caja {
   background: white;
   padding: 30px;
@@ -108,9 +106,8 @@ button[type="submit"]:active {
   transform: scale(0.98);
 }
 
-/* --- Fase 5: Estilos Flexbox para la Lista --- */
 .lista-contenedor {
-  display: flex; /* Layout Flexible requerido */
+  display: flex; 
   flex-wrap: wrap; 
   justify-content: center; 
   align-items: stretch; 
@@ -118,7 +115,6 @@ button[type="submit"]:active {
   padding: 20px 0;
 }
 
-/* --- Estilos de las Tarjetas (Clases Dinámicas) --- */
 .card {
   padding: 25px 20px;
   border-radius: 12px;
@@ -154,13 +150,19 @@ button[type="submit"]:active {
   background-color: #e6f4ea;
   border: 2px solid #ceead6;
 }
-.card-permanente p { color: #137333; }
+
+.card-permanente p {
+  color: #137333;
+}
 
 .card-visita {
   background-color: #fef7e0;
   border: 2px solid #fde293;
 }
-.card-visita p { color: #b06000; }
+
+.card-visita p {
+  color: #b06000;
+}
 
 footer {
   text-align: center;
