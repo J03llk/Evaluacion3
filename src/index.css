@@ -1,0 +1,171 @@
+/* Reset CSS Obligatorio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #aaa;
+  font-weight: 500;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* --- Estilos del Formulario --- */
+.formulario-caja {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.formulario-caja h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.grupo-input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-input label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.grupo-input input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.grupo-input input[type="text"]:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.grupo-input input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* --- Fase 5: Estilos Flexbox para la Lista --- */
+.lista-contenedor {
+  display: flex; /* Layout Flexible requerido */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: stretch; 
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* --- Estilos de las Tarjetas (Clases Dinámicas) --- */
+.card {
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-permanente {
+  background-color: #e6f4ea;
+  border: 2px solid #ceead6;
+}
+.card-permanente p { color: #137333; }
+
+.card-visita {
+  background-color: #fef7e0;
+  border: 2px solid #fde293;
+}
+.card-visita p { color: #b06000; }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+}
